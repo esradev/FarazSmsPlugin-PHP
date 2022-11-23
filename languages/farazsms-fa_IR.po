@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"Language: fa\n"
+
+#: admin/class-farazsms-admin.php:134
+msgid "FarazSMS"
+msgstr "فراز اس‌‌ام‌‌اس"
+
+#: admin/class-farazsms-admin.php:142
+msgid "settings"
+msgstr "تنظیمات"
+
+msgid "Username"
+msgstr "نام کاربری"
+
+msgid "Password"
+msgstr "رمز عبور"
+
+msgid "from number"
+msgstr "شماره ارسال کننده"
+
+msgid "Save"
+msgstr "ذخیره"
+
+#: admin/class-farazsms-admin.php:109
+msgid "FarazSMS latest news"
+msgstr "فراز اس ام اس: مقالات حرفه ای بازاریابی پیامکی"

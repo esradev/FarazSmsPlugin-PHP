@@ -1,0 +1,23 @@
+#: admin/class-farazsms-admin.php:109
+msgid "FarazSMS"
+msgstr ""
+
+#: admin/class-farazsms-admin.php:142
+msgid "settings"
+msgstr ""
+
+msgid "Username"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "from number"
+msgstr ""
+
+msgid "Save"
+msgstr "ذخیره"
+
+#: admin/class-farazsms-admin.php:109
+msgid "FarazSMS latest news"
+msgstr ""
