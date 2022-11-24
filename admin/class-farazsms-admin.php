@@ -96,6 +96,12 @@ class Farazsms_Admin extends class_farazsms_base
 		}
 	}
 
+	/**
+	 * Show the leatst posts from https://farazsms.com/ on dashboard widget
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function rss_meta_box()
 	{
 
@@ -128,31 +134,42 @@ class Farazsms_Admin extends class_farazsms_base
 <?php
 	}
 
+	/**
+	 * Add menu and submenu pages for the plugin settings on the side bar.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function admin_add_menu_page()
 	{
-		add_menu_page(
-			__('FarazSMS', 'farazsms'),
-			__('FarazSMS', 'farazsms'),
-			'manage_options',
-			'farazsms',
-			[$this, 'admin_settings_page'],
-			plugin_dir_url(__FILE__) . 'img/logo.png'
-		);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'تنظیمات', 'manage_options', 'farazsms&tab=tab-1', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'دفترچه تلفن', 'manage_options', 'farazsms&tab=tab-2', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'هماهنگ سازی', 'manage_options', 'farazsms&tab=tab-3', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'تنظیمات دیدگاه', 'manage_options', 'farazsms&tab=tab-4', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'ارسال پیامک', 'manage_options', 'farazsms&tab=tab-5', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'تنظیمات ووکامرس', 'manage_options', 'farazsms&tab=tab-6', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'تنظیمات EDD', 'manage_options', 'farazsms&tab=tab-7', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'تنظیمات خبرنامه', 'manage_options', 'farazsms&tab=tab-8', [$this, 'admin_settings_page']);
-		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), 'سایر افزونه ها', 'manage_options', 'farazsms&tab=tab-9', [$this, 'admin_settings_page']);
+		add_menu_page(__('FarazSMS', 'farazsms'), __('FarazSMS', 'farazsms'), 'manage_options', 'farazsms', [$this, 'admin_settings_page'],	plugin_dir_url(__FILE__) . 'img/logo.png');
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Settings', 'farazsms'), 'manage_options', 'farazsms', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Phone Book', 'farazsms'), 'manage_options', 'farazsms&tab=tab-2', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Synchronization', 'farazsms'), 'manage_options', 'farazsms&tab=tab-3', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Comment Settings', 'farazsms'), 'manage_options', 'farazsms&tab=tab-4', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Woocommerce Settings', 'farazsms'), 'manage_options', 'farazsms&tab=tab-5', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Edd Settings', 'farazsms'), 'manage_options', 'farazsms&tab=tab-6', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Newslatter Settings', 'farazsms'), 'manage_options', 'farazsms&tab=tab-7', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Other Plugins', 'farazsms'), 'manage_options', 'farazsms&tab=tab-8', [$this, 'admin_settings_page']);
+		add_submenu_page('farazsms', __('FarazSMS', 'farazsms'), __('Send SMS', 'farazsms'), 'manage_options', 'farazsms&tab=tab-9', [$this, 'admin_settings_page']);
 	}
+
+	/**
+	 * Inclode admin settings
+	 *
+	 * @since    1.0.0
+	 */
 
 	public function admin_settings_page()
 	{
 		include plugin_dir_path(__FILE__) . '/partials/farazsms-admin-settings.php';
 	}
+
+	/**
+	 * Add bar menu. show some links for farazsms plugin on the admin bar.
+	 *
+	 * @since    1.0.0
+	 */
 
 	public function fsms_admin_add_bar_menu()
 	{
@@ -162,17 +179,23 @@ class Farazsms_Admin extends class_farazsms_base
 			return;
 		}
 		$wp_admin_bar->add_menu(array(
-			'id' => 'farazsms', 'parent' => null, 'group' => null, 'title' => '<img style="padding-top: 10px" src="' . plugin_dir_url(__FILE__) . '/img/logo.png"/>', 'href' => get_bloginfo('url') . '/wp-admin/admin.php?page=farazsms', 'meta' => [
-				'title' => __('Faraz Sms', 'textdomain'), //This title will show on hover
+			'id' => 'farazsms', 'parent' => null, 'group' => null, 'title' => __('FarazSms ', 'farazsms') . '<img style="padding-top: 10px" src="' . plugin_dir_url(__FILE__) . '/img/logo.png"/>', 'href' => get_bloginfo('url') . '/wp-admin/admin.php?farazsms', 'meta' => [
+				'title' => __('FarazSms', 'textdomain'), //This title will show on hover
 			]
 		));
 		$credit = $fsms_base::get_credit();
 		if ($credit) {
-			$wp_admin_bar->add_menu(array('parent' => 'farazsms', 'id'     => 'farazsms-admin-bar-credit', 'title' => 'اعتبار حساب: ' . number_format($credit) . ' تومان', 'href' => get_bloginfo('url') . '/wp-admin/admin.php?page=farazsms'));
+			$wp_admin_bar->add_menu(array('parent' => 'farazsms', 'id'     => 'farazsms-admin-bar-credit', 'title' => __('Account credit: ', 'farazsms') . number_format($credit) . __(' $IR_T', 'farazsms'), 'href' => get_bloginfo('url') . '/wp-admin/admin.php?farazsms'));
 		}
-		$wp_admin_bar->add_menu(array('parent' => 'farazsms', 'title' => 'ارسال پیامک', 'id'     => 'farazsms-admin-bar-send-sms', 'href' => get_bloginfo('url') . '/wp-admin/admin.php?page=farazsms&tab=tab-5'));
-		$wp_admin_bar->add_menu(array('parent' => 'farazsms', 'title' => 'فراز اس‌‌ام‌‌اس', 'id'     => 'farazsms-admin-bar-go-to-site', 'href' => 'https://farazsms.com/'));
+		$wp_admin_bar->add_menu(array('parent' => 'farazsms', 'title' => __('Send Sms', 'farazsms'), 'id' => 'farazsms-admin-bar-send-sms', 'href' => get_bloginfo('url') . '/wp-admin/admin.php?page=farazsms&tab=tab-5'));
+		$wp_admin_bar->add_menu(array('parent' => 'farazsms', 'title' => __('FarazSms', 'farazsms'), 'id' => 'farazsms-admin-bar-go-to-site', 'href' => 'https://farazsms.com/'));
 	}
+
+	/**
+	 * Ajax save settings.
+	 *
+	 * @since    1.0.0
+	 */
 
 	public function ajax_save_settings()
 	{
@@ -191,16 +214,30 @@ class Farazsms_Admin extends class_farazsms_base
 		$admin_login_noti = $_POST['admin_login_noti'] ?? '';
 		$admin_login_noti_roles = $_POST['admin_login_noti_roles'] ?? '';
 		$admin_login_noti_p = $_POST['admin_login_noti_p'] ?? '';
+
+		/**
+		 * Validation of API key
+		 *
+		 * @since    1.0.0
+		 */
+
 		if (!empty($fsms_apikey)) {
 			$apikey_is_valid = $fsms_base::check_if_apikey_is_valid($fsms_apikey);
 			if (!$apikey_is_valid) {
-				$has_error = 'کلید api وارد شده صحیح نیست';
+				$has_error = __('Invalid API key', 'farazsms');
 			} else {
 				update_option('fsms_panel_expire_date', $apikey_is_valid->expire);
 			}
 		} else {
 			delete_option('fsms_panel_expire_date');
 		}
+
+		/**
+		 * Update option of credentials, if credentials is valid.
+		 *
+		 * @since    1.0.0
+		 */
+
 		$credentials_is_valid = $fsms_base::check_if_credentials_is_valid($fsms_uname, $fsms_password);
 		if ($credentials_is_valid) {
 			$options = [
@@ -220,7 +257,7 @@ class Farazsms_Admin extends class_farazsms_base
 			];
 			update_option('fsms_credentials', $options);
 		} else {
-			$has_error = 'متاسفانه شما در شرکت فراز اس ام اس حساب کاربری ندارید، برای استفاده از این افزونه می بایست از سایت farazsms.com نسبت به خرید سامانه پیامک اقدام نمایید، برای خرید پنل پیامکی می توانید از کد تخفیف farazsmsclub استفاده نمایید.';
+			$has_error = __('Unfortunately, you do not have a user account in Faraz SMS company. To use this plugin, you must purchase the SMS system from farazsms.com. You can use the discount code "farazsmsclub" to buy the SMS panel.', 'farazsms');
 		}
 		if (!empty($has_error)) {
 			wp_send_json_error($has_error);
@@ -228,6 +265,12 @@ class Farazsms_Admin extends class_farazsms_base
 			wp_send_json_success();
 		}
 	}
+
+	/**
+	 * Save phone book settings.
+	 *
+	 * @since    1.0.0
+	 */
 
 	public function ajax_save_phone_book_settings()
 	{
@@ -248,6 +291,12 @@ class Farazsms_Admin extends class_farazsms_base
 		wp_send_json_success();
 	}
 
+	/**
+	 * Synchronization Operator whit a phone book.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function ajax_sync_operate()
 	{
 		$sync_operation = $_POST['sync_operation'] ?? '';
@@ -259,10 +308,10 @@ class Farazsms_Admin extends class_farazsms_base
 			$result = $this->sync_bookly();
 		}
 		if ($result === 'empty_phonebook') {
-			wp_send_json_error("لطفا ابتدا یک دفترچه تلفن انتخاب کنید");
+			wp_send_json_error(__('Please select a phonebook first.', 'farazsms'));
 		}
 		if ($result === 'error_happened') {
-			wp_send_json_error("خطایی رخ داد بعدا تلاش کنید");
+			wp_send_json_error(__('An error occurred. Please try again later.', 'farazsms'));
 		}
 		if ($result) {
 			wp_send_json_success();
@@ -270,6 +319,12 @@ class Farazsms_Admin extends class_farazsms_base
 			wp_send_json_error();
 		}
 	}
+
+	/**
+	 * Digits Synchronization whit a phone book.
+	 *
+	 * @since    1.0.0
+	 */
 
 	private function sync_digits()
 	{
@@ -301,6 +356,12 @@ class Farazsms_Admin extends class_farazsms_base
 		return true;
 	}
 
+	/**
+	 * Woocommerce Synchronization whit a phone book.
+	 *
+	 * @since    1.0.0
+	 */
+
 	private function sync_woo()
 	{
 		$fsms_base = class_farazsms_base::getInstance();
@@ -330,6 +391,12 @@ class Farazsms_Admin extends class_farazsms_base
 		return TRUE;
 	}
 
+	/**
+	 * Bookly Synchronization whit a phone book.
+	 *
+	 * @since    1.0.0
+	 */
+
 	private function sync_bookly()
 	{
 		$fsms_base = class_farazsms_base::getInstance();
@@ -356,6 +423,12 @@ class Farazsms_Admin extends class_farazsms_base
 		return true;
 	}
 
+	/**
+	 * Save Cemment settings.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function ajax_save_comment_settings()
 	{
 		$add_mobile_field = $_POST['add_mobile_field'] ?? '';
@@ -375,6 +448,12 @@ class Farazsms_Admin extends class_farazsms_base
 		wp_send_json_success();
 	}
 
+	/**
+	 * Save EDD settings.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function ajax_save_edd_settings()
 	{
 		$edd_phonebooks_choice = $_POST['edd_phonebooks_choice'] ?? [];
@@ -383,11 +462,11 @@ class Farazsms_Admin extends class_farazsms_base
 		$edd_send_to_admin = $_POST['edd_send_to_admin'] ?? '';
 		$edd_admin_pcode = $_POST['edd_admin_pcode'] ?? '';
 		if ($edd_send_to_user == 'true' && empty($edd_user_pcode)) {
-			wp_send_json_error('لطفا کد پترن کاربر را وارد کنید');
+			wp_send_json_error(__('Please enter User pattern code', 'farazsms'));
 			wp_die();
 		}
 		if ($edd_send_to_admin == 'true' && empty($edd_admin_pcode)) {
-			wp_send_json_error('لطفا کد پترن مدیر را وارد کنید');
+			wp_send_json_error(__('Please enter Admin pattern code', 'farazsms'));
 			wp_die();
 		}
 		update_option('edd_phonebooks_choice', $edd_phonebooks_choice);
@@ -397,6 +476,12 @@ class Farazsms_Admin extends class_farazsms_base
 		update_option('edd_admin_pcode', $edd_admin_pcode);
 		wp_send_json_success();
 	}
+
+	/**
+	 * Save Woocommerce settings.
+	 *
+	 * @since    1.0.0
+	 */
 
 	public function ajax_save_woo_settings()
 	{
@@ -421,10 +506,16 @@ class Farazsms_Admin extends class_farazsms_base
 		wp_send_json_success();
 	}
 
+	/**
+	 * Comments table coulums.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function comments_fsms_table_columns($my_cols)
 	{
 		$temp_columns = array(
-			'mobile' => 'شماره موبایل'
+			'mobile' => __('Phone number', 'farazsms')
 		);
 		$my_cols = array_slice($my_cols, 0, 3, true) + $temp_columns + array_slice($my_cols, 3, NULL, true);
 		return $my_cols;
@@ -441,6 +532,12 @@ class Farazsms_Admin extends class_farazsms_base
 		endswitch;
 	}
 
+	/**
+	 * Send SMS to phonebooks.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function ajax_send_message_to_phonebooks()
 	{
 		$fsms_base = class_farazsms_base::getInstance();
@@ -449,7 +546,7 @@ class Farazsms_Admin extends class_farazsms_base
 		$send_to_subscribers = $_POST['send_to_subscribers'] ?? '';
 		$send_formnum_choice = $_POST['send_formnum_choice'] ?? '';
 		if ($send_formnum_choice == '2' && !strpos($_POST['phones'], ',')) {
-			wp_send_json_error("لطفا شماره های دستی را با فرمت درست وارد کنید");
+			wp_send_json_error(__('Please enter manual numbers in the correct format', 'farazsms'));
 		}
 		if ($send_formnum_choice == '1') {
 			$send_formnum_choice = $fsms_base::get_service_sender_number();
@@ -463,7 +560,7 @@ class Farazsms_Admin extends class_farazsms_base
 			}
 		}
 		if (empty($phonebooks) && empty($fixed_phones) && $send_to_subscribers == "false") {
-			wp_send_json_error("لطفا حداقل یک دفترچه تلفن یا یک شماره دستی یا اعضای خبرنامه را انتخاب کنید");
+			wp_send_json_error(__('Please select at least one phonebook or manual number or newsletter members', 'farazsms'));
 			wp_die();
 		}
 		if (!empty($fixed_phones)) {
@@ -475,6 +572,12 @@ class Farazsms_Admin extends class_farazsms_base
 		}
 		wp_send_json_success();
 	}
+
+	/**
+	 * Save Newsletter settings.
+	 *
+	 * @since    1.0.0
+	 */
 
 	public function fsms_save_newsletter_settings()
 	{
@@ -488,11 +591,11 @@ class Farazsms_Admin extends class_farazsms_base
 		$newsletter_new_product_notification = $_POST['newsletter_new_product_notification'] ?? '';
 		$newsletter_product_notification_message = $_POST['newsletter_product_notification_message'] ?? '';
 		if ($newsletter_send_ver_code == 'true' && empty($newsletter_pcode)) {
-			wp_send_json_error('لطفا کد پترن را وارد کنید');
+			wp_send_json_error(__('Please enter the pattern code', 'farazsms'));
 			wp_die();
 		}
 		if ($newsletter_welcome == 'true' && empty($newsletter_welcomep)) {
-			wp_send_json_error('لطفا کد پترن پیامک خوشامدگویی را وارد کنید');
+			wp_send_json_error(__('Please enter the pattern code of the welcome SMS', 'farazsms'));
 			wp_die();
 		}
 		update_option('fsms_newsletter_phonebooks', $newsletter_phonebooks);
@@ -507,6 +610,12 @@ class Farazsms_Admin extends class_farazsms_base
 		wp_send_json_success();
 	}
 
+	/**
+	 * Delete user from subscribers.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function fsms_delete_user_from_subscribers()
 	{
 		$fsms_base = class_farazsms_base::getInstance();
@@ -515,16 +624,22 @@ class Farazsms_Admin extends class_farazsms_base
 		wp_send_json_success();
 	}
 
+	/**
+	 * Send message to subscribers of newsletter.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function send_message_to_subscribers()
 	{
 		$fsms_base = class_farazsms_base::getInstance();
 		$message = $_POST['message'] ?? '';
 		$subscribers = $fsms_base::get_subscribers();
 		if (!$fsms_base::isAPIKeyEntered()) {
-			wp_send_json_error("لطفا ابتدا در تب تنظیمات کلید api را وارد کنید");
+			wp_send_json_error(__('Please enter the api key first in the Settings tab.', 'farazsms'));
 		}
 		if (empty($subscribers)) {
-			wp_send_json_error("هنوز کسی عضو خبرنامه نیست");
+			wp_send_json_error(__('No one is a subscriber of the newsletter yet', 'farazsms'));
 		}
 		if (strpos($message, '%name%') !== false) {
 			foreach ($subscribers as $subscriber) {
@@ -541,11 +656,17 @@ class Farazsms_Admin extends class_farazsms_base
 		wp_send_json_success();
 	}
 
+	/**
+	 * Send Tracking code for orders.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function fsms_tracking_code_order_postbox()
 	{
 		add_meta_box(
 			'fsms-tracking_send_sms',
-			'ارسال پیامک کد رهگیری',
+			__('Send tracking code.', 'farazsms'),
 			[$this, 'add_order_tracking_box'],
 			'shop_order',
 			'side',
@@ -568,12 +689,12 @@ class Farazsms_Admin extends class_farazsms_base
 		$order_id = $_POST['order_id'] ?? '';
 		try {
 			if (empty($tacking_code) || strlen($tacking_code) < 20) {
-				throw new Exception("لطفا کد رهگیری را صحیح وارد کنید");
+				throw new Exception(__('Please enter the tracking code correctly.', 'farazsms'));
 			}
 			$order = wc_get_order($order_id);
 			$phone = $order->get_billing_phone();
 			if (empty($phone)) {
-				throw new Exception("شماره تلفن مشتری وارد نشده است");
+				throw new Exception(__('Customer phone number not entered.', 'farazsms'));
 			}
 			$order_date['order_id'] = $order->get_id();
 			$order_date['order_status'] = wc_get_order_status_name($order->get_status());
@@ -585,6 +706,12 @@ class Farazsms_Admin extends class_farazsms_base
 			wp_send_json_error($e->getMessage());
 		}
 	}
+
+	/**
+	 * Save other settings.
+	 *
+	 * @since    1.0.0
+	 */
 
 	public function fsms_save_other_settings()
 	{
@@ -612,18 +739,24 @@ class Farazsms_Admin extends class_farazsms_base
 		wp_send_json_success();
 	}
 
+	/**
+	 * Send feedback.
+	 *
+	 * @since    1.0.0
+	 */
+
 	public function fsms_send_feedback()
 	{
 		$fsms_base = class_farazsms_base::getInstance();
 		$feedback_message = $_POST['feedback_message'];
 		if (empty($feedback_message)) {
-			wp_send_json_error("متن پیام نباید خالی باشد");
+			wp_send_json_error(__('Message text must not be empty', 'farazsms'));
 		}
 		$result = $fsms_base::send_feedback_message_to_server($feedback_message);
 		if ($result) {
 			wp_send_json_success();
 		} else {
-			wp_send_json_error("خطایی رخ داد بعدا تلاش کنید");
+			wp_send_json_error(__('An error occurred, try again later.', 'farazsms'));
 		}
 	}
 }

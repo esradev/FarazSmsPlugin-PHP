@@ -7,31 +7,23 @@
  * @package    Farazsms
  * @subpackage Farazsms/admin/partials
  * 
- * @since      1.0.8 isset(); added for Check if option is set any thing to avoid warnings.
+ * @since      1.0.8 isset(); added (?? '') for avoid (trying to access array offset on value of type bool)
  */
 $fsms_base = class_farazsms_base::getInstance();
-$credentials_option = add_option('fsms_credentials');
-$fsms_uname = isset($credentials_option['fsms_uname']);
-$fsms_password = isset($credentials_option['fsms_password']);
-$fsms_admin_notify_number = isset($credentials_option['fsms_admin_notify_number']);
-$fsms_fromnum = ($credentials_option['fsms_fromnum']) ?? '3000505';
+$credentials_option = get_option('fsms_credentials');
+$fsms_uname = $credentials_option['fsms_uname'] ?? '';
+$fsms_password = $credentials_option['fsms_password'] ?? '';
+$fsms_admin_notify_number = $credentials_option['fsms_admin_notify_number'] ?? '';
+$fsms_fromnum = $credentials_option['fsms_fromnum'] ?? '3000505';
 $fsms_fromnum_adver = $credentials_option['fsms_fromnum_adver'] ?? '+98club';
-$fsms_apikey = isset($credentials_option['fsms_api_key']);
-$fsms_sendwm = isset($credentials_option['fsms_sendwm']);
-$fsms_sendwm_with_pattern = isset($credentials_option['fsms_sendwm_with_pattern']);
-$fsms_welcomep = isset($credentials_option['fsms_welcomep']);
-$fsms_admin_login_noti = isset($credentials_option['fsms_admin_login_noti']);
-$fsms_admin_login_noti_p = isset($credentials_option['fsms_admin_login_noti_p']);
-if (isset($credentials_option['fsms_welcome_message'])) {
-    $fsms_welcome_message = ($credentials_option['fsms_fromnum']);
-} else {
-    $fsms_welcome_message = '';
-};
-if (isset($credentials_option['fsms_admin_login_noti_roles'])) {
-    $fsms_admin_login_noti_roles = ($credentials_option['fsms_fromnum']);
-} else {
-    $fsms_admin_login_noti_roles = [];
-};
+$fsms_apikey = $credentials_option['fsms_api_key'] ?? '';
+$fsms_sendwm = $credentials_option['fsms_sendwm'] ?? '';
+$fsms_sendwm_with_pattern = $credentials_option['fsms_sendwm_with_pattern'] ?? '';
+$fsms_welcomep = $credentials_option['fsms_welcomep'] ?? '';
+$fsms_admin_login_noti = $credentials_option['fsms_admin_login_noti'] ?? '';
+$fsms_admin_login_noti_p = $credentials_option['fsms_admin_login_noti_p'] ?? '';
+$fsms_welcome_message = $credentials_option['fsms_welcome_message'] ?? '';
+$fsms_admin_login_noti_roles = $credentials_option['fsms_admin_login_noti_roles'] ?? '';
 $fsms_addmf = get_option('fsms_add_mobile_field', 'false');
 $fsms_requiredmf = get_option('fsms_required_mobile_field', 'false');
 $fsms_notify_admin = get_option('fsms_notify_admin', 'false');
