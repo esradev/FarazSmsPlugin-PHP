@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: FarazSMS\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-26 18:55+0000\n"
-"PO-Revision-Date: 2022-11-26 19:40+0000\n"
+"PO-Revision-Date: 2022-11-26 18:56+0000\n"
 "Last-Translator: \n"
 "Language-Team: فارسی\n"
 "Language: fa_IR\n"
@@ -17,48 +17,48 @@ msgstr ""
 
 #: admin/class-farazsms-admin.php:188
 msgid " $IR_T"
-msgstr "تومان"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:165
 msgid " day(s)"
-msgstr "روز"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:163
 msgid " Toman"
-msgstr "تومان"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:936
 #: admin/partials/farazsms-admin-settings.php:981
 msgid "Account confirmation pattern code for cooperation in sales"
-msgstr "کد پترن تأیید حساب جهت همکاری در فروش"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:188
 msgid "Account credit: "
-msgstr "اعتبار حساب:"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:500
 msgid "Add the mobile field to the comment registration form?"
-msgstr "فیلد موبایل را به فرم ثبت نظر اضافه کنید؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:212
 msgid "Admin phone number"
-msgstr "شماره همراه ادمین"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:650
 msgid "Admin SMS pattern code"
-msgstr "کد پترن پیامک مدیریت"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:539
 msgid "Administrator notification pattern code"
-msgstr "کد پترن اعلان به مدیریت"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1051
 msgid "Advertising number"
-msgstr "خط تبلیغاتی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:222
 msgid "Advertising sender numberRemaining time"
-msgstr "شماره ارسال کننده خط تبلیغاتی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:989
 msgid ""
@@ -66,15 +66,11 @@ msgid ""
 "is not installed. To see the settings related to this plugin, first install "
 "and activate it."
 msgstr ""
-"افزونه Affiliate wp یا Ultimate Affiliate Pro یا Yith woocommerce Affiliate "
-"نصب نشده است. برای مشاهده تنظیمات مربوط به این افزونه ابتدا آن را نصب و فعال "
-"کنید."
 
 #: admin/partials/farazsms-admin-settings.php:872
 msgid ""
 "Affiliate wp plugin or Ultimate Affiliate Pro or Yith woocommerce Affiliate"
 msgstr ""
-"پلاگین wp وابسته یا Ultimate Affiliate Pro یا Yith woocommerce Affiliate"
 
 #: admin/partials/farazsms-admin-settings.php:291
 #: admin/partials/farazsms-admin-settings.php:446
@@ -90,38 +86,36 @@ msgid ""
 "All material and intellectual rights of this plugin belong to Faraz SMS "
 "(Zarin Communications Asia Company)."
 msgstr ""
-"کلیه حقوق مادی و معنوی این افزونه متعلق به فراز اس ام اس (شرکت ارتباطات زرین "
-"آسیا) می باشد."
 
 #: public/class-farazsms-public.php:1433
 msgid "An error occurred"
-msgstr "خطایی رخ داده است."
+msgstr ""
 
 #: admin/class-farazsms-admin.php:759
 msgid "An error occurred, try again later."
-msgstr "خطایی رخ داده است، بعداً دوباره امتحان کنید."
+msgstr ""
 
 #: admin/class-farazsms-admin.php:314
 msgid "An error occurred. Please try again later."
-msgstr "خطایی رخ داده است، لطفاً بعداً دوباره امتحان کنید."
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:184
 #: admin/partials/farazsms-admin-settings.php:202
 msgid "API key"
-msgstr "کلید API"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:383
 #: admin/partials/farazsms-admin-settings.php:480
 msgid "Bookley plugin is not installed"
-msgstr "افزونه بوکلی نصب نیست."
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:477
 msgid "Bookley synchronization"
-msgstr "هماهنگ سازی افزونه بوکلی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:302
 msgid "Buying a mobile number storage device"
-msgstr "یک دستگاه ذخیره شماره موبایل خریداری کنید."
+msgstr ""
 
 #. Description of the plugin
 msgid ""
@@ -130,68 +124,64 @@ msgid ""
 "in the phone book, sending welcome SMS, sending reply SMS to comments, etc. "
 "are part of the features of this powerful SMS plugin."
 msgstr ""
-"با استفاده از افزونه فراز اس ام اس می توانید به صورت حرفه ای سایت خود را به "
-"یک ابزار قدرتمند پیامکی برای اطلاع رسانی و بازاریابی مجهز کنید. ذخیره شماره "
-"مشتریان در دفترچه تلفن، ارسال پیامک خوش آمد گویی، ارسال پیامک پاسخ به نظرات "
-"و ... بخشی از امکانات این افزونه قدرتمند پیامکی است."
 
 #: admin/partials/farazsms-admin-settings.php:373
 msgid "Choosing a phone book for Bookley"
-msgstr "انتخاب دفترچه تلفن برای بوکلی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:345
 msgid "Choosing a phone book for Digits"
-msgstr "انتخاب دفترچه تلفن برای Digits"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:359
 msgid "Choosing a phone book for WooCommerce"
-msgstr "انتخاب دفترچه تلفن برای ووکامرس"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:528
 msgid "Comment response pattern code"
-msgstr "کد پترن پاسخ نظر"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:149
 msgid "Comment Settings"
-msgstr "تنظیمات بخش نظرات"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:496
 msgid "Comment settings"
-msgstr "تنظیمات بخش نظرات"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:523
 msgid "Comment submit pattern code"
-msgstr "کد پترن ثبت نظر"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:704
 msgid "Confirm subscription by sending confirmation code?"
-msgstr "با ارسال کد تایید، اشتراک را تایید کنید؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:929
 #: admin/partials/farazsms-admin-settings.php:974
 msgid "Confirmation of the cooperation account in sales"
-msgstr "تایید حساب همکاری در فروش"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1016
 #: admin/partials/farazsms-admin-settings.php:1074
 msgid "Content message"
-msgstr "Content message"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:163
 msgid "Credit amount: "
-msgstr "مقدار اعتبار: "
+msgstr ""
 
 #: admin/class-farazsms-admin.php:697
 msgid "Customer phone number not entered."
-msgstr "شماره تلفن مشتری وارد نشده است."
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:118
 msgid "Dear %display_name%, your subscription has expired, please renew"
-msgstr "%display_name عزیز، اشتراک شما منقضی شده است، لطفاً تمدید کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:106
 msgid "Dear %name% only %time% days left until your subscription expires"
-msgstr "%name% عزیز فقط %time% روز تا پایان اشتراک شما باقی مانده است"
+msgstr ""
 
 #: includes/class-farazsms-base.php:601
 msgid ""
@@ -202,64 +192,52 @@ msgid ""
 "www.farazsms.com\n"
 "+982171333036"
 msgstr ""
-"کاربر محترم\n"
-"هزینه پنل اس ام اس شما کمتر از 10 هزار تومان است و ممکن است به زودی پیامک "
-"سایت های شما ارسال نشود و سایت شما مسدود شود. در اسرع وقت سامانه پیامکی را "
-"شارژ خواهم کرد.\n"
-"www.farazsms.com\n"
-"+982171333036"
 
 #: public/class-farazsms-public.php:1293
 msgid ""
 "Dear user, your panel will expire less than a month from now. To renew your "
 "SMS panel, contact Faraz SMS"
 msgstr ""
-"کاربر گرامی، پنل شما کمتر از یک ماه دیگر منقضی می شود. برای تمدید پنل اس ام "
-"اس خود با فراز اس ام اس تماس بگیرید"
 
 #: public/class-farazsms-public.php:1303
 msgid ""
 "Dear user, your panel will expire less than a week from now. To renew your "
 "SMS panel, contact Faraz SMS."
 msgstr ""
-"کاربر گرامی، پنل شما کمتر از یک هفته دیگر منقضی می شود. برای تمدید پنل اس ام "
-"اس خود با فراز اس ام اس تماس بگیرید."
 
 #: admin/partials/farazsms-admin-settings.php:783
 msgid "Delete"
-msgstr "حذف"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:775
 msgid "Delete from newsletter"
-msgstr "حذف از خبرنامه"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:466
 msgid "Digits plugin is not installed"
-msgstr "افزونه Digits نصب نشده است."
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:661
 msgid ""
 "EDD plugin is not installed. To see the settings related to this plugin, "
 "first install and activate EDD."
 msgstr ""
-"افزونه EDD نصب نشده است. برای مشاهده تنظیمات مربوط به این افزونه ابتدا EDD "
-"را نصب و فعال کنید."
 
 #: admin/partials/farazsms-admin-settings.php:617
 msgid "EDD settings"
-msgstr "تنظیمات Edd"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:151
 msgid "Edd Settings"
-msgstr "تنظیمات Edd"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1036
 msgid "Enter numbers manually"
-msgstr "شماره ها را به صورت دستی وارد کنید"
+msgstr ""
 
 #: public/class-farazsms-public.php:248
 msgid "Error: Mobile number is required."
-msgstr "خطا: شماره موبایل الزامی است."
+msgstr ""
 
 #. Name of the plugin
 #. Author of the plugin
@@ -269,31 +247,31 @@ msgstr "خطا: شماره موبایل الزامی است."
 #: admin/class-farazsms-admin.php:151 admin/class-farazsms-admin.php:152
 #: admin/class-farazsms-admin.php:153 admin/class-farazsms-admin.php:154
 msgid "FarazSMS"
-msgstr "فراز اس ام اس"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:191
 msgid "FarazSms"
-msgstr "فراز اس ام اس"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:182
 msgid "FarazSms "
-msgstr "فراز اس ام اس"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:111
 msgid "FarazSMS latest news"
-msgstr "آخرین اخبار فراز اس ام اس"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:773
 msgid "First name and last name"
-msgstr "نام و نام خانوادگی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:437
 msgid "Gravity Form plugin is not installed"
-msgstr "افزونه Gravity Form نصب نشده است"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:397
 msgid "Gravity Form Settings"
-msgstr "تنظیمات Gravity Form"
+msgstr ""
 
 #. URI of the plugin
 #. Author URI of the plugin
@@ -306,125 +284,116 @@ msgid ""
 "for sending web service SMS and sending SMS to customers. Send a support "
 "ticket for this."
 msgstr ""
-"اگر Enamad دارید پیشنهاد می شود خط اختصاصی 9000 برای ارسال پیامک وب سرویس و "
-"ارسال پیامک به مشتریان خریداری کنید. برای این کار یک تیکت پشتیبانی ارسال "
-"کنید."
 
 #: admin/partials/farazsms-admin-settings.php:403
 msgid ""
 "In this section, you can specify the fields you want to register in the "
 "Gravity Form phone book"
 msgstr ""
-"در این قسمت می توانید فیلدهایی را که می خواهید در دفترچه تلفن Gravity Form "
-"ثبت کنید را مشخص کنید"
 
 #: admin/class-farazsms-admin.php:227
 msgid "Invalid API key"
-msgstr "کلید API نامعتبر است"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:506
 msgid "Is the mobile number field mandatory?"
-msgstr "آیا فیلد شماره موبایل اجباری است؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:280
 msgid "Login Pattern code"
-msgstr "کد الگوی ورود"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:836
 msgid "Membership expiration warning SMS text"
-msgstr "پیامک هشدار انقضای عضویت"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:679
 #: admin/partials/farazsms-admin-settings.php:741
 #: admin/partials/farazsms-admin-settings.php:757
 msgid "Message content"
-msgstr "محتوای پیام"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:587
 msgid "message content"
-msgstr "محتوای پیام"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:753
 msgid "Message text must not be empty"
-msgstr "متن پیام نباید خالی باشد"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:563
 msgid "Mobile number confirmation on the account settlement page?"
-msgstr "تایید شماره موبایل در صفحه تسویه حساب؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:569
 msgid "Mobile number verification pattern code"
-msgstr "کد پترن تایید شماره موبایل"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:89
 msgid ""
 "New article %title% has been published.\n"
 "Article address: %url%"
 msgstr ""
-"مقاله جدید %title% منتشر شده است.\n"
-"آدرس مقاله: %url%"
 
 #: admin/partials/farazsms-admin-settings.php:914
 #: admin/partials/farazsms-admin-settings.php:959
 msgid "New referral"
-msgstr "ارجاع جدید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:921
 #: admin/partials/farazsms-admin-settings.php:966
 msgid "New referral SMS pattern code"
-msgstr "کد الگوی پیامک معرفی جدید"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:152
 msgid "Newslatter Settings"
-msgstr "تنظیمات خبرنامه"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:711
 msgid "Newsletter membership confirmation code pattern"
-msgstr "کد پترن تایید عضویت در خبرنامه"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:672
 msgid "Newsletter settings"
-msgstr "تنظیمات خبرنامه"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:642
 msgid "No one is a subscriber of the newsletter yet"
-msgstr "هنوز کسی مشترک خبرنامه نیست"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:153
 msgid "Other Plugins"
-msgstr "سایر افزونه ها"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:807
 msgid "Other plugins"
-msgstr "سایر افزونه ها"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:849
 msgid "Paid Membership PRO"
-msgstr "افزونه Paid Membership PRO"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:867
 msgid ""
 "Paid Membership PRO plugin is not installed. To see the settings related to "
 "this plugin, first install and activate it."
 msgstr ""
-"افزونه Paid Membership PRO نصب نشده است. برای مشاهده تنظیمات مربوط به این "
-"افزونه ابتدا آن را نصب و فعال کنید."
 
 #: admin/partials/farazsms-admin-settings.php:207
 msgid "Password"
-msgstr "کلمه عبور"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:256
 msgid "Pattern code for welcome massege"
-msgstr "کد پترن برای پیام خوش آمد گویی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:594
 msgid "Pattern code to send tracking code"
-msgstr "کد الگو برای ارسال کد رهگیری"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:147
 msgid "Phone Book"
-msgstr "دفتر تلفن"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:518 public/class-farazsms-public.php:1147
 #: public/class-farazsms-public.php:1148 public/class-farazsms-public.php:1164
@@ -432,241 +401,241 @@ msgstr "دفتر تلفن"
 #: public/class-farazsms-public.php:1188
 #: admin/partials/farazsms-admin-settings.php:774
 msgid "Phone number"
-msgstr "شماره همراه"
+msgstr ""
 
 #: public/class-farazsms-public.php:317 public/class-farazsms-public.php:412
 #: public/class-farazsms-public.php:416
 msgid "Phone number: "
-msgstr "شماره همراه: "
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:298
 msgid "Phonebook"
-msgstr "دفتر تلفن"
+msgstr ""
 
 #: public/class-farazsms-public.php:1404
 msgid "Please confirm your phone number first"
-msgstr "لطفا ابتدا شماره همراه خود را تایید کنید"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:469
 msgid "Please enter Admin pattern code"
-msgstr "لطفا کد الگوی مدیریت را وارد کنید"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:549
 msgid "Please enter manual numbers in the correct format"
-msgstr "لطفا شماره های دستی را با فرمت صحیح وارد کنید"
+msgstr ""
 
 #: public/class-farazsms-public.php:1424
 msgid "Please enter phone number."
-msgstr "لطفا شماره همراه را وارد کنید"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:639
 msgid "Please enter the api key first in the Settings tab."
-msgstr "لطفاً ابتدا کلید API را در تب تنظیمات وارد کنید."
+msgstr ""
 
 #: admin/class-farazsms-admin.php:594
 msgid "Please enter the pattern code"
-msgstr "لطفا کد پترن را وارد کنید"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:598
 msgid "Please enter the pattern code of the welcome SMS"
-msgstr "لطفا کد پترن پیامک خوش آمد گویی را وارد کنید"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:692
 msgid "Please enter the tracking code correctly."
-msgstr "لطفا کد رهگیری را به درستی وارد کنید."
+msgstr ""
 
 #: admin/class-farazsms-admin.php:465
 msgid "Please enter User pattern code"
-msgstr "لطفا کد پترن کاربر را وارد کنید"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:311
 msgid "Please select a phonebook first."
-msgstr "لطفا ابتدا یک دفتر تلفن انتخاب کنید."
+msgstr ""
 
 #: admin/class-farazsms-admin.php:563
 msgid ""
 "Please select at least one phonebook or manual number or newsletter members"
-msgstr "لطفاً حداقل یک دفتر تلفن یا شماره دستی یا عضو خبرنامه را انتخاب کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:165
 msgid "Remaining time: "
-msgstr "زمان باقی مانده: "
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:287
 msgid "Save Settings"
-msgstr "ذخیره تنظیمات"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:440
 #: admin/partials/farazsms-admin-settings.php:794
 msgid "Save settings"
-msgstr "ذخیره تنظیمات"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:994
 msgid "Save sttings"
-msgstr "ذخیره تنظیمات"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:512
 msgid "Save the phone number in the phone book?"
-msgstr "شماره تلفن در دفتر تلفن ذخیره شود؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:622
 msgid "Save the phone number in the phonebook?"
-msgstr "شماره تلفن در دفتر تلفن ذخیره شود؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:355
 msgid "SDigits plugin is not installed"
-msgstr "افزونه Digits نصب نشده است"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:387
 msgid "Select phone book for Gravity Form"
-msgstr "دفتر تلفن را برای Gravity Form انتخاب کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:692
 msgid "Select phone book for newsletter"
-msgstr "دفتر تلفن را برای خبرنامه انتخاب کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1021
 msgid "Select phonebook"
-msgstr "دفتر تلفن را انتخاب کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:312
 msgid "Select the custom field phone book"
-msgstr "فیلد سفارشی دفتر تلفن را انتخاب کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:322
 #: admin/partials/farazsms-admin-settings.php:877
 msgid "Select the mobile number custom field"
-msgstr "فیلد سفارشی شماره موبایل را انتخاب کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1048
 msgid "Select the sender number"
-msgstr "شماره فرستنده را انتخاب کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:268
 msgid "Select user role(s)"
-msgstr "انتخاب نقش(های) کاربر"
+msgstr ""
 
 #: public/class-farazsms-public.php:1380
 msgid "Send"
-msgstr "ارسال"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:240
 msgid "Send a welcome SMS to the user? "
-msgstr "پیامک خوشامدگویی به کاربر ارسال شود؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:644
 msgid "Send an SMS to the admin?"
-msgstr "به ادمین پیامک بفرستید؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1068
 #: admin/partials/farazsms-admin-settings.php:1078
 msgid "Send Feedback"
-msgstr "ارسال بازخورد"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:685
 msgid "Send message"
-msgstr "ارسال پیام"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:734
 msgid "Send new posts to newsletter members?"
-msgstr "ارسال پست های جدید برای اعضای خبرنامه؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:533
 msgid "Send notification SMS to the manager?"
-msgstr "پیامک اطلاع رسانی به مدیر ارسال شود؟"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:154
 msgid "Send SMS"
-msgstr "ارسال پیامک"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:190
 #: admin/partials/farazsms-admin-settings.php:1055
 msgid "Send Sms"
-msgstr "ارسال پیامک"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1007
 msgid "Send sms"
-msgstr "ارسال پیامک"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:852
 msgid "Send SMS membership expiration?"
-msgstr "ارسال پیامک انقضاء زمان عضویت؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:676
 msgid "Send SMS to members of the newsletter"
-msgstr "برای اعضای خبرنامه پیامک ارسال کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1013
 msgid "Send SMS to phonebook contacts or manual numbers"
-msgstr "به مخاطبین دفتر تلفن یا شماره های دستی پیامک ارسال کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:633
 msgid "Send SMS to the user?"
-msgstr "برای کاربر پیامک بفرستید؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:262
 msgid "Send SMS when user(s) login to the admin? "
-msgstr "هنگام ورود کاربر(ها) به ادمین پیامک ارسال شود؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:815
 msgid "Send the first SMS warning of membership expiration?"
-msgstr "ارسال اولین پیامک هشدار پایان عضویت؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:829
 msgid "Send the third SMS warning of membership expiration?"
-msgstr "ارسال پیامک سوم اخطار پایان عضویت؟"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:669
 msgid "Send tracking code."
-msgstr "ارسال کد رهگیری"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:874
 msgid "Send user SMS"
-msgstr "ارسال پیامک به کاربر"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:246
 msgid "Send via Pattern? "
-msgstr "ارسال از طریق پترن؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:822
 msgid "Sending a second SMS warning of membership expiration?"
-msgstr "ارسال پیامک دوم هشدار پایان عضویت؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:576
 msgid "Sending a timed survey SMS for WooCommerce?"
-msgstr "ارسال پیامک نظرسنجی زمان بندی شده برای ووکامرس؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:750
 msgid "Sending new products to newsletter members?"
-msgstr "ارسال محصولات جدید برای اعضای خبرنامه؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1038
 msgid "Separate numbers with English commas"
-msgstr "اعداد را با ویرگول , (انگلیسی) جدا کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:217
 msgid "Service sender number"
-msgstr "شماره فرستنده خدماتی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:1050
 msgid "Servicng number"
-msgstr "شماره خدماتی"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:146
 msgid "Settings"
-msgstr "تنظیمات"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:180
 msgid "settings"
-msgstr "تنظیمات"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:639
 msgid "SMS pattern code of the user"
-msgstr "کد پترن پیامک کاربر"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:155
 msgid "SMS sending panel - short message system - SMS sending system"
-msgstr "پنل ارسال پیامک - سامانه پیام کوتاه - سامانه ارسال پیامک"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:301
 msgid ""
@@ -674,26 +643,23 @@ msgid ""
 "device to collect your customers mobile numbers. Click on the link below to "
 "see the details"
 msgstr ""
-"پیشنهاد ویژه: اگر فروشگاه فیزیکی دارید، از دستگاه ذخیره شماره موبایل برای "
-"جمع آوری شماره موبایل مشتریان خود استفاده کنید. برای مشاهده جزئیات روی لینک "
-"زیر کلیک کنید"
 
 #: admin/class-farazsms-admin.php:148
 #: admin/partials/farazsms-admin-settings.php:453
 msgid "Synchronization"
-msgstr "هماهنگ سازی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:463
 msgid "Synchronization of Digits"
-msgstr "همگام سازی Digits"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:470
 msgid "Synchronization of WooCommerce"
-msgstr "همگام سازی ووکامرس"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:690
 msgid "The code of the newsletter membership form is: [farazsms]."
-msgstr "کد کوتاه فرم عضویت در خبرنامه عبارت است از: [farazsms]."
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:92
 msgid ""
@@ -701,66 +667,58 @@ msgid ""
 "%site_title%.\n"
 "Product link: %url%"
 msgstr ""
-"محصول %product_name% با قیمت %price% در فروشگاه %site_title% موجود است.\n"
-"پیوند محصول: %url%"
 
 #: admin/partials/farazsms-admin-settings.php:859
 msgid "The text of the membership expiration SMS"
-msgstr "متن پیامک پایان عضویت"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:582
 msgid "The time of sending SMS after placing the order is up to date"
-msgstr "زمان ارسال پیامک پس از ثبت سفارش به روز می باشد"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:844
 msgid ""
 "The Ultimate Membership PRO plugin is not installed. To see the settings "
 "related to this plugin, first install and activate it."
 msgstr ""
-"افزونه Ultimate Membership PRO نصب نشده است. برای مشاهده تنظیمات مربوط به "
-"این افزونه ابتدا آن را نصب و فعال کنید."
 
 #: admin/partials/farazsms-admin-settings.php:730
 msgid "The usable variable is %name%"
-msgstr "متغیر قابل استفاده %name% است"
+msgstr ""
 
 #: public/class-farazsms-public.php:1409
 msgid "The verification code entered is not valid"
-msgstr "کد تأیید وارد شده معتبر نیست"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:573
 msgid "The verification code variable is %code%"
-msgstr "متغیر کد تأیید %code% است"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:191
 msgid ""
 "To get the access key in your panel Faraz SMS, refer to the web service menu "
 "in the access keys section."
 msgstr ""
-"برای دریافت کلید دسترسی در پنل فراز اس ام اس خود به منوی وب سرویس در قسمت "
-"کلیدهای دسترسی مراجعه کنید."
 
 #: admin/partials/farazsms-admin-settings.php:1011
 msgid ""
 "To see the sending SMS Section, first enter your information in the settings"
-msgstr "برای مشاهده بخش ارسال پیامک ابتدا اطلاعات خود را در تنظیمات وارد کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:305
 msgid ""
 "To view the phonebook settings, first enter your information in the settings"
 msgstr ""
-"برای مشاهده تنظیمات دفترچه تلفن ابتدا اطلاعات خود را در تنظیمات وارد کنید"
 
 #: admin/partials/farazsms-admin-settings.php:457
 msgid ""
 "To view the synchronization settings, first enter your information in the "
 "settings"
 msgstr ""
-"برای مشاهده تنظیمات همگام سازی ابتدا اطلاعات خود را در تنظیمات وارد کنید"
 
 #: admin/partials/farazsms-admin-settings.php:812
 msgid "Ultimate Membership PRO plugin"
-msgstr "افزونه Ultimate Membership PRO"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:260
 msgid ""
@@ -768,58 +726,46 @@ msgid ""
 "this plugin, you must purchase the SMS system from farazsms.com. You can use "
 "the discount code \"farazsmsclub\" to buy the SMS panel."
 msgstr ""
-"متاسفانه شما در شرکت فراز اس ام اس حساب کاربری ندارید. برای استفاده از این "
-"افزونه باید سامانه پیامکی را از سایت farazsms.com خریداری کنید. برای خرید "
-"پنل پیامکی می توانید از کد تخفیف “farazsmsclub” استفاده کنید."
 
 #: admin/partials/farazsms-admin-settings.php:591
 msgid ""
 "Usable time variables are %time% store name %sitename% product name %item% "
 "product link %item_link%"
 msgstr ""
-"متغیرهای زمانی قابل استفاده عبارتند از %time% نام فروشگاه %sitename% نام "
-"محصول %item% پیوند محصول %item_link%"
 
 #: admin/partials/farazsms-admin-settings.php:863
 msgid "Usable variable is user name %display_name%"
-msgstr "متغیر قابل استفاده نام کاربری %display_name% است"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:259
 msgid "Usable variables are %display_name% and %username%"
-msgstr "متغیرهای قابل استفاده %display_name% و %username% هستند"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:715
 msgid "Usable variables are %name% and confirmation code: %code%"
-msgstr "متغیرهای قابل استفاده %name% و کد تایید: %code% هستند."
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:761
 msgid ""
 "Usable variables are site title %site_title% product name %product_name% "
 "price %price% and product link %url%"
 msgstr ""
-"متغیرهای قابل استفاده عبارتند از عنوان سایت %site_title% نام محصول "
-"%product_name% قیمت %price% و پیوند محصول %url%"
 
 #: admin/partials/farazsms-admin-settings.php:745
 msgid ""
 "Usable variables are the title of the article %title% and the address of the "
 "article %url%"
 msgstr ""
-"متغیرهای قابل استفاده عبارتند از عنوان مقاله %title% و آدرس مقاله %url%"
 
 #: admin/partials/farazsms-admin-settings.php:840
 msgid "Usable variables are username %name% time remaining to day %time%"
 msgstr ""
-"متغیرهای قابل استفاده عبارتند از نام کاربری %name% زمان باقی مانده تا روز "
-"%time%"
 
 #: admin/partials/farazsms-admin-settings.php:284
 msgid ""
 "Usable variables are username %user_login% and user name %display_name% and "
 "login date %date%"
 msgstr ""
-"متغیرهای قابل استفاده عبارتند از نام کاربری %user_login% و نام کاربری "
-"%display_name% و تاریخ ورود %date%"
 
 #: admin/partials/farazsms-admin-settings.php:987
 msgid ""
@@ -827,9 +773,6 @@ msgid ""
 "%user_email% display name %display_name% mobile number %user_mobile% "
 "referral amount %amount%"
 msgstr ""
-"متغیرهای قابل استفاده عبارتند از نام کاربری %user_login% نام مستعار "
-"%user_nicename% ایمیل %user_email% نمایش نام %display_name% شماره موبایل "
-"%user_mobile% مقدار ارجاع %amount%"
 
 #: admin/partials/farazsms-admin-settings.php:598
 msgid ""
@@ -837,9 +780,6 @@ msgid ""
 "%order_id% order status %order_status% full name billing address "
 "%billing_full_name% full name shipping address %shipping_full_name % is"
 msgstr ""
-"متغیرهای قابل استفاده کد رهگیری %tracking_code% (الزامی) شماره سفارش "
-"%order_id% وضعیت سفارش %order_status% نام کامل آدرس صورتحساب "
-"%billing_full_name% نام کامل آدرس ارسال %shipping_full_name % است"
 
 #: admin/partials/farazsms-admin-settings.php:654
 msgid ""
@@ -849,99 +789,87 @@ msgid ""
 "%discount% | Paid amount (including discount): %total_price% | Direct "
 "download link (not encrypted): %link% | Order number: %payment_id%"
 msgstr ""
-"متغیرهای قابل استفاده: شماره موبایل: %phone% | ایمیل: %email% | نام: "
-"%first_name% | نام خانوادگی: %last_name% | محصولات خریداری شده: %محصول% | "
-"مبلغ کل (بدون احتساب تخفیف): %price% | مبلغ کل تخفیف: %discount% | مبلغ "
-"پرداختی (شامل تخفیف): %total_price% | لینک دانلود مستقیم (رمزگذاری نشده): "
-"%link% | شماره سفارش: %payment_id%"
 
 #: admin/partials/farazsms-admin-settings.php:543
 msgid ""
 "Usable variables: Post title: %title% Comment authors name: %name% Comment "
 "authors email: %email% Comment link: %link% Comment text: %content%"
 msgstr ""
-"متغیرهای قابل استفاده: عنوان پست: %title% نام نویسنده نظر: %name% ایمیل "
-"نویسنده نظر: %email% پیوند نظر: %link% متن نظر: %content%"
 
 #: public/class-farazsms-public.php:315
 msgid "User not logged in"
-msgstr "کاربر وارد نشده است"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:900
 #: admin/partials/farazsms-admin-settings.php:945
 msgid "User registration"
-msgstr "ثبت نام کاربر"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:907
 #: admin/partials/farazsms-admin-settings.php:952
 msgid "User registration SMS pattern code"
-msgstr "کد پترن پیامک ثبت نام کاربر"
+msgstr ""
 
 #: public/class-farazsms-public.php:1360 public/class-farazsms-public.php:1370
 msgid "Verification code"
-msgstr "کد تایید"
+msgstr ""
 
 #: public/class-farazsms-public.php:1435
 msgid "Verification code sent successfully"
-msgstr "کد تأیید با موفقیت ارسال شد"
+msgstr ""
 
 #: public/class-farazsms-public.php:414
 msgid "We use this to send order information."
-msgstr "ما از این برای ارسال اطلاعات سفارش استفاده می کنیم."
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:252
 msgid "Welcome message content"
-msgstr "محتوای پیام خوش آمد گویی"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:726
 msgid "Welcome SMS pattern code"
-msgstr "کد الگوی اس ام اس خوش آمدید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:719
 msgid "Welcome SMS to subscriber of the newsletter?"
-msgstr "پیامک خوش آمدگویی به مشترک خبرنامه؟"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:369
 #: admin/partials/farazsms-admin-settings.php:473
 msgid "WooCommerce plugin is not installed"
-msgstr "افزونه ووکامرس نصب نشده است"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:606
 msgid ""
 "Woocommerce plugin is not installed. To see the settings related to this "
 "plugin, first install and activate WooCommerce."
 msgstr ""
-"افزونه Woocommerce نصب نشده است. برای مشاهده تنظیمات مربوط به این افزونه "
-"ابتدا ووکامرس را نصب و فعال کنید."
 
 #: admin/partials/farazsms-admin-settings.php:557
 msgid "WooCommerce settings"
-msgstr "تنظیمات ووکامرس"
+msgstr ""
 
 #: admin/class-farazsms-admin.php:150
 msgid "Woocommerce Settings"
-msgstr "تنظیمات ووکامرس"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:459
 msgid "You can register old users in the phone book through the buttons below"
 msgstr ""
-"از طریق دکمه های زیر می توانید کاربران قدیمی را در دفترچه تلفن ثبت کنید"
 
 #: admin/partials/farazsms-admin-settings.php:1071
 msgid "You can report problems to us through the form below"
-msgstr "از طریق فرم زیر می توانید مشکلات را به ما گزارش دهید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:681
 msgid "You can use %name% variable in SMS text"
-msgstr "می توانید از متغیر %name% در متن پیامک استفاده کنید"
+msgstr ""
 
 #: admin/partials/farazsms-admin-settings.php:308
 msgid ""
 "You have not registered a phone book yet. Please create your phone book in "
 "the Faraz SMS system first."
 msgstr ""
-"شما هنوز دفتر تلفن ثبت نکرده اید. لطفا ابتدا دفتر تلفن خود را در سامانه فراز "
-"اس ام اس ایجاد کنید."
 
 #: admin/partials/farazsms-admin-settings.php:46
 msgid ""
@@ -949,10 +877,7 @@ msgid ""
 " Please share your experience of using and buying with us and our users by "
 "clicking on the link below from the comments section: %item_link%"
 msgstr ""
-"%item% را از %sitename% %time% قبل خریداری کردید. از خرید شما متشکرم. لطفاً "
-"با کلیک بر روی لینک زیر از بخش نظرات، تجربه خود را از استفاده و خرید با ما و "
-"کاربران ما به اشتراک بگذارید: %item_link%"
 
 #: admin/partials/farazsms-admin-settings.php:1030
 msgid "ُSend to newsletter subscribers"
-msgstr "ارسال برای مشترکین خبرنامه"
+msgstr ""

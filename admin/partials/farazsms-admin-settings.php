@@ -219,7 +219,7 @@ if ($fsms_base::isAFFInstalled() || $fsms_base::isWCAFInstalled() || $fsms_base:
                     </label>
                     <br><br>
                     <label for="fsms_fromnum_adver">
-                        <span class="label"><?php esc_attr_e('Advertising sender numberRemaining time', 'farazsms') ?><span class="required">*</span>
+                        <span class="label"><?php esc_attr_e('Advertising sender number', 'farazsms') ?><span class="required">*</span>
                             <div class="icon icon__src" style="
     position: absolute;
     left: 7px;
