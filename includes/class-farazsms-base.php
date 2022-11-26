@@ -1,10 +1,31 @@
 <?php
 
+/**
+ * @link       https://farazsms.com/
+ * @since      1.0.8
+ *
+ * @package    Farazsms
+ * @subpackage Farazsms/includes
+ * 
+ */
+
+/**
+ * 
+ * Load IPPanel autoload file.
+ * 
+ */
+
 require 'vendor/autoload.php';
 
 use IPPanel\Errors\Error;
 use IPPanel\Errors\HttpException;
 
+
+/**
+ * 
+ * Initialize the class and set its properties.
+ * 
+ */
 class class_farazsms_base
 {
 	private static $_instance = null;
@@ -31,6 +52,11 @@ class class_farazsms_base
 
 	public function __construct()
 	{
+		/**
+		 * 
+		 * Init credential options.
+		 * 
+		 */
 
 		$credentials_option = get_option('fsms_credentials');
 		if ($credentials_option) {
@@ -57,6 +83,13 @@ class class_farazsms_base
 			}
 			self::$apiKey = $fsms_apikey;
 		}
+
+		/**
+		 * 
+		 * Check is Woocommerce, Digits, Bookly and some other plugins are installed and activated.
+		 * 
+		 * And call Main functions.
+		 */
 
 		$active_plugins = apply_filters('active_plugins', get_option('active_plugins'));
 
@@ -188,6 +221,12 @@ class class_farazsms_base
 		return str_replace($key_a, $num_a, $str);
 	}
 
+	/**
+	 * 
+	 * Validate mobile number.
+	 * 
+	 */
+
 	public static function validate_mobile_number($phone)
 	{
 		$phone = self::fsms_tr_num($phone);
@@ -198,6 +237,12 @@ class class_farazsms_base
 		}
 		return $matches[3];
 	}
+
+	/**
+	 * 
+	 * Farazsms send pattern function.
+	 * 
+	 */
 
 	public function farazsms_send_pattern($pattern, $phone, $input_data)
 	{
@@ -246,6 +291,12 @@ class class_farazsms_base
 			return true;
 		}
 	}
+
+	/**
+	 * 
+	 * Save to phonebook functions.
+	 * 
+	 */
 
 	public function save_to_phonebook($phone, $phone_book)
 	{
@@ -314,6 +365,12 @@ class class_farazsms_base
 		}
 	}
 
+	/**
+	 * 
+	 * Send welcome message function.
+	 * 
+	 */
+
 	public function send_welcome_message($phone, $uid)
 	{
 		$phone = self::fsms_tr_num($phone);
@@ -348,7 +405,14 @@ class class_farazsms_base
 		}
 	}
 
-	//only place that we need faraz username and password
+	/**
+	 * 
+	 * Check if credentials is valid.
+	 * 
+	 * Only place that we need faraz username and password.
+	 * 
+	 */
+
 	public function check_if_credentials_is_valid($uname, $pass)
 	{
 		$body = array(
@@ -375,6 +439,13 @@ class class_farazsms_base
 		return false;
 	}
 
+	/**
+	 * 
+	 * Check if API key is valid.
+	 * 
+	 */
+
+
 	public function check_if_apikey_is_valid($apiKey)
 	{
 		try {
@@ -384,6 +455,12 @@ class class_farazsms_base
 			return FALSE;
 		}
 	}
+
+	/**
+	 * 
+	 * Get phonebooks.
+	 * 
+	 */
 
 	public static function get_phonebooks()
 	{
@@ -415,6 +492,12 @@ class class_farazsms_base
 		return $resp;
 	}
 
+	/**
+	 * 
+	 * Get Lines.
+	 * 
+	 */
+
 	public function get_lines()
 	{
 		$body = array(
@@ -441,6 +524,12 @@ class class_farazsms_base
 
 		return $resp;
 	}
+
+	/**
+	 * 
+	 * Get credit.
+	 * 
+	 */
 
 	public function get_credit()
 	{
@@ -497,16 +586,22 @@ class class_farazsms_base
 		return substr($credit_rial, 0, -1);
 	}
 
+	/**
+	 * 
+	 * Send low credit notify to admin.
+	 * 
+	 */
+
 	public function send_admin_low_credit_to_admin()
 	{
 		$fromnum = "3000505";
 		if (empty(self::$admin_number)) {
 			return;
 		}
-		$message = "کاربر گرامی 
-شارژ پنل پیامک شما کمتر از ۱۰ هزار تومان است و ممکن است به زودی پیامک های سایت شما ارسال نشوند و سایت شما با اختلال مواجه شود. هرچه سریعتر نسبت به شارژ سامانه پیامکی اقدام نمایید.
+		$message = __('Dear user
+The charge for your SMS panel is less than 10 thousand tomans, and your sites SMS may not be sent soon and your site may be blocked. I will charge the SMS system as soon as possible.
 www.farazsms.com
-۰۲۱۷۱۳۳۳۰۳۶";
++982171333036', 'farazsms');
 		if (!empty(self::$apiKey)) {
 			try {
 				$client = new \IPPanel\Client(self::$apiKey);
@@ -543,6 +638,13 @@ www.farazsms.com
 		}
 	}
 
+	/**
+	 * 
+	 * Get registered pattern variables.
+	 * 
+	 */
+
+
 	public function get_registered_pattern_variables($pCode)
 	{
 		$body = array(
@@ -570,6 +672,13 @@ www.farazsms.com
 		$patternMessage = $response->data->patternMessage;
 		return $patternMessage;
 	}
+
+	/**
+	 * 
+	 * Send comment replgy sms.
+	 * 
+	 */
+
 
 	public function send_comment_reply_sms($phone, $pattern, $data)
 	{
@@ -601,6 +710,12 @@ www.farazsms.com
 		return self::farazsms_send_pattern($pattern, $phone, $input_data);
 	}
 
+	/**
+	 * 
+	 * Send comment replgy sms to admin
+	 * 
+	 */
+
 	public function send_comment_reply_sms_to_admin($data)
 	{
 		$fsms_admin_notify_pcode = self::fsms_tr_num(get_option('fsms_admin_notify_pcode'));
@@ -631,6 +746,12 @@ www.farazsms.com
 		return self::farazsms_send_pattern($fsms_admin_notify_pcode, self::$admin_number, $input_data);
 	}
 
+	/**
+	 * 
+	 * Save comment mobile to phonebook.
+	 * 
+	 */
+
 	public function save_comment_mobile_to_phonebook($phone)
 	{
 		$phone = self::fsms_tr_num($phone);
@@ -639,6 +760,12 @@ www.farazsms.com
 			$this->save_to_phonebook($phone, $phone_bookId);
 		}
 	}
+
+	/**
+	 * 
+	 * Send message.
+	 * 
+	 */
 
 	public function send_message($phones, $message, $sender = null)
 	{
@@ -692,6 +819,12 @@ www.farazsms.com
 		}
 	}
 
+	/**
+	 * 
+	 * Get phonebook numbers.
+	 * 
+	 */
+
 	public function get_phonebook_numbers($phoneBookID)
 	{
 		$body = array(
@@ -719,6 +852,12 @@ www.farazsms.com
 
 		return $response;
 	}
+
+	/**
+	 * 
+	 * Send EDD sms.
+	 * 
+	 */
 
 	public function send_edd_sms($phone, $pattern, $data)
 	{
@@ -764,6 +903,12 @@ www.farazsms.com
 		return self::farazsms_send_pattern($pattern, $phone, $input_data);
 	}
 
+	/**
+	 * 
+	 * Send newsletter verifiacation code.
+	 * 
+	 */
+
 	public function send_newsletter_verification_code($phone, $data)
 	{
 		$phone = self::fsms_tr_num($phone);
@@ -785,6 +930,12 @@ www.farazsms.com
 		return self::farazsms_send_pattern($pattern, $phone, $input_data);
 	}
 
+	/**
+	 * 
+	 * Send woocommerce verification code.
+	 * 
+	 */
+
 	public function send_woocommerce_verification_code($phone, $data)
 	{
 		$phone = self::fsms_tr_num($phone);
@@ -797,12 +948,24 @@ www.farazsms.com
 		return self::farazsms_send_pattern($pattern, $phone, $input_data);
 	}
 
+	/**
+	 * 
+	 * Save subscriber to DB.
+	 * 
+	 */
+
 	public static function save_subscriber_to_db($data)
 	{
 		global $wpdb;
 		$table_name = $wpdb->prefix . 'farazsms_newsletter';
 		return $wpdb->insert($table_name, $data);
 	}
+
+	/**
+	 * 
+	 * Save generated code to DB
+	 * 
+	 */
 
 	public static function save_generated_code_to_db($phone, $code)
 	{
@@ -816,6 +979,12 @@ www.farazsms.com
 		return $wpdb->insert($table, $data);
 	}
 
+	/**
+	 * 
+	 * Check if code is valid.
+	 * 
+	 */
+
 	public static function check_if_code_is_valid($phone, $code)
 	{
 		global $wpdb;
@@ -828,6 +997,13 @@ www.farazsms.com
 		return FALSE;
 	}
 
+	/**
+	 * 
+	 * Check if code is valid for woocommerce
+	 * 
+	 */
+
+
 	public static function check_if_code_is_valid_for_woo($phone, $code)
 	{
 		global $wpdb;
@@ -839,12 +1015,25 @@ www.farazsms.com
 		}
 		return FALSE;
 	}
+
+	/**
+	 * 
+	 * Delete code for woocommerce
+	 * 
+	 */
+
 	public static function delete_code_for_woo($phone)
 	{
 		global $wpdb;
 		$table = $wpdb->prefix . 'farazsms_vcode';
 		$wpdb->delete($table, array('phone' => $phone));
 	}
+
+	/**
+	 * 
+	 * Check if phone already exist.
+	 * 
+	 */
 
 	public static function check_if_phone_already_exist($phone)
 	{
@@ -857,6 +1046,12 @@ www.farazsms.com
 		return FALSE;
 	}
 
+	/**
+	 * 
+	 * Get subscribers.
+	 * 
+	 */
+
 	public static function get_subscribers()
 	{
 		global $wpdb;
@@ -865,12 +1060,24 @@ www.farazsms.com
 		return $wpdb->get_results("SELECT * FROM $table_name");
 	}
 
+	/**
+	 * 
+	 * Delete subscriber.
+	 * 
+	 */
+
 	public static function delete_subscriber($subscriber_id)
 	{
 		global $wpdb;
 		$table = $wpdb->prefix . 'farazsms_newsletter';
 		return $wpdb->delete($table, array('id' => $subscriber_id));
 	}
+
+	/**
+	 * 
+	 * Send newsletter welcome message.
+	 * 
+	 */
 
 	public static function send_newsletter_welcome_message($phone, $name)
 	{
@@ -882,6 +1089,12 @@ www.farazsms.com
 		$phone = self::fsms_tr_num($phone);
 		return self::farazsms_send_pattern($newsletter_welcomep, $phone, array("name" => $name));
 	}
+
+	/**
+	 * 
+	 * Send admins login notification to superadmin.
+	 * 
+	 */
 
 	public function send_admins_login_notification_to_superadmin($pattern, $data)
 	{
@@ -898,6 +1111,12 @@ www.farazsms.com
 		}
 		return self::farazsms_send_pattern($pattern, self::$admin_number, $input_data);
 	}
+
+	/**
+	 * 
+	 * Send timed message.
+	 * 
+	 */
 
 	public function send_timed_message($phone, $data, $order_date)
 	{
@@ -947,6 +1166,12 @@ www.farazsms.com
 		}
 	}
 
+	/**
+	 * 
+	 * Send tracking code.
+	 * 
+	 */
+
 	public function send_tracking_code($phone, $tacking_code, $order_date)
 	{
 		$tracking_code_pattern = get_option('fsms_woo_tracking_code_pattern', '');
@@ -981,6 +1206,12 @@ www.farazsms.com
 		return self::farazsms_send_pattern($tracking_code_pattern, $phone, $input_data);
 	}
 
+	/**
+	 * 
+	 * AFFS send sms.
+	 * 
+	 */
+
 	public static function affs_send_sms($phone, $user_register_pattern, $args)
 	{
 
@@ -1010,6 +1241,12 @@ www.farazsms.com
 
 		return self::farazsms_send_pattern($user_register_pattern, $phone, $input_data);
 	}
+
+	/**
+	 * 
+	 * Send feedback message to server.
+	 * 
+	 */
 
 	public function send_feedback_message_to_server($feedback_message)
 	{

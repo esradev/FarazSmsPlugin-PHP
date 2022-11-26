@@ -152,7 +152,7 @@ if ($fsms_base::isAFFInstalled() || $fsms_base::isWCAFInstalled() || $fsms_base:
     <div class="fsms_header">
         <div>
             <a href="https://farazsms.com" target="_blank">
-                <img src="<?php echo plugin_dir_url(__FILE__) . '/logo-1.png'; ?>" alt="پنل ارسال اس ام اس – سامانه پیام کوتاه – سامانه ارسال پیامک">
+                <img src="<?php echo plugin_dir_url(__FILE__) . '/logo-1.png'; ?>" alt="<?php esc_attr_e('SMS sending panel - short message system - SMS sending system', 'farazsms') ?>">
             </a>
         </div>
         <?php if ($credentials_option) {
